@@ -15,8 +15,20 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <androidx.appcompat.widget.SearchView
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/search_view"
+        android:layout_margin="18dp"
+        android:background="@color/white"
+        app:queryHint="Search Notes..."
+        app:iconifiedByDefault="false"
+        android:layout_alignParentTop="true"/>
+
+
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerView"
+        android:layout_below="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_margin="8dp"
         android:layout_height="match_parent"/>
